@@ -11,6 +11,8 @@ const videoIntelligence = require('@google-cloud/video-intelligence');
 
 exports.annotateVideos = functions.storage.object().onFinalize(async (object) => {
 
+	console.log('########' + object.name + '#########');
+	
 	// Creates a client
 	const client = new videoIntelligence.VideoIntelligenceServiceClient();
 
@@ -37,8 +39,11 @@ exports.annotateVideos = functions.storage.object().onFinalize(async (object) =>
 
 	// Gets labels for video from its annotations
 	const labels = annotations.segmentLabelAnnotations;
+	// var array = [];
 	labels.forEach(label => {
 	  console.log(`Label ${label.entity.description} occurs at:`);
+	  // array.push(label.entity.description);
+
 	  label.segments.forEach(segment => {
 	    segment = segment.segment;
 	    if (segment.startTimeOffset.seconds === undefined) {
@@ -61,6 +66,9 @@ exports.annotateVideos = functions.storage.object().onFinalize(async (object) =>
 	      `\tEnd: ${segment.endTimeOffset.seconds}.` +
 	        `${(segment.endTimeOffset.nanos / 1e6).toFixed(0)}s`
 	    );
+
+
 	  });
 	});
+	// console.log(array);
 });
