@@ -93,6 +93,6 @@ nltk-story-generation-service/app.yaml
 
 
 ### Contributors and Team Members: 
-1. Jay Shah
-2. Aditya Govardhan
-3. Kunal Suthar
+1. Jay Shah (@jaygshah)
+2. Aditya Govardhan (@AdityaGovardhan)
+3. Kunal Suthar (@Kunal30)
