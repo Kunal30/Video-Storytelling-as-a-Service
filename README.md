@@ -51,7 +51,7 @@ nltk-story-generation-service/app.yaml
 * In firebase-functions directory
 	* In /functions/index.js, update variables PROJECT_NAME, STORAGE_NAME and LABELS_DATABASE_NAME 
 	* Use node version 8
-	```sh
+```sh
 nvm use 8
 ```
 	* Install firebase-tools globally
@@ -67,9 +67,9 @@ npm install -g firebase-tools
 	firebase init functions
 ```
 	* Deploy firebase functions
-	```sh
+```sh
 	firebase deploy --only functions
-	```
+```
 	* These firebase functions, triggered by change in STORAGE_NAME and LABELS_DATABASE_NAME, make a RESTful API call to video-intelligence-labelling-service and nltk-story-generation-service respectively, passing them necessary information through query parameters
 * In Firebase Authentication Website
 	* Go to Sign-in method
@@ -86,9 +86,9 @@ npm install -g firebase-tools
 	* Run the following bash command
 	bash gradlew clean build
 	* Connect Android OS based mobile device to the system through USB cable and run the following bash command
-	```sh
-			adb install ./app/build/outputs/apk/debug/app-debug.apk
-	```
+```sh
+	adb install ./app/build/outputs/apk/debug/app-debug.apk
+```
 
 
 
