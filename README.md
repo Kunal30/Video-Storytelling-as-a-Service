@@ -1,10 +1,11 @@
 ## Real-Time Video-Storytelling As A Service
-
+![alt text](https://github.com/AdityaGovardhan/video-storytelling/blob/master/RTVSTS.jpg)
 ### Requirements
 ```sh
 bash terminal (although Windows / Mac OS can be used too with different commands)
 gcloud (and python-app-engine using gcloud)
 nvm (install node and npm using nvm)
+Android SDK
 adb (for installing android app in mobile device)
 ```
 ### Installation Steps:
