@@ -86,14 +86,13 @@ npm install -g firebase-tools
 	* Run the following bash command
 	bash gradlew clean build
 	* Connect Android OS based mobile device to the system through USB cable and run the following bash command
+	```sh
 			adb install ./app/build/outputs/apk/debug/app-debug.apk
-
-
-
+	```
 
 
 
 ### Contributors and Team Members: 
-Jay Shah
-Aditya Govardhan
-Kunal Suthar
+1. Jay Shah
+2. Aditya Govardhan
+3. Kunal Suthar
