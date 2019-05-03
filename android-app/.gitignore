@@ -1,0 +1,8 @@
+.gradle/
+.idea/
+app/app.iml
+app/build/
+app/google-services.json
+android-app.iml
+local.properties
+build/
